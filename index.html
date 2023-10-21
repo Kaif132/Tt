@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ownais & Mudassir Mobile Shop</title>
+    <style>
+        body {
+            background-color: navy;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Mobile Shop</h1>
+    </header>
+
+    <div id="products">
+        <div class="product">
+            <img src="mobile1.jpg" alt="Mobile 1">
+            <h2>Mobile Model 1</h2>
+            <p>Price: $299</p>
+        </div>
+
+        <div class="product">
+            <img src="mobile2.jpg" alt="Mobile 2">
+            <h2>Mobile Model 2</h2>
+            <p>Price: $349</p>
+        </div>
+
+        <div class="product">
+            <img src="mobile3.jpg" alt="Mobile 3">
+            <h2>Mobile Model 3</h2>
+            <p>Price: $399</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us at: <a href="https://instagram.com/abdul_kaif12?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"></a></p>
+    </footer>
+
+    <script>
+        const products = document.querySelectorAll('.product');
+        
+        products.forEach(product => {
+            product.addEventListener('click', () => {
+                alert(`You clicked on ${product.querySelector('h2').textContent}.`);
+            });
+    </script>
+</body>
+</html>
